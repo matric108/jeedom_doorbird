@@ -1,0 +1,9 @@
+==== Doorbird, portier connecté
+
+Ce plugin permet d'interconnecter Jeedom avec un portier Doorbird.
+
+Il permet deux types d'interconnexions :
+
+- On peut être notifier des 3 types d'évènements détectés par Doorbird : mouvement, sonnerie, ouverture
+
+- Jeedom peut déclencher l'ouverture de porte et l'éclairage
