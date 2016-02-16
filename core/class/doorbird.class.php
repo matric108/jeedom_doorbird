@@ -119,15 +119,15 @@ class doorbird extends eqLogic {
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=1&event=doorbell';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . '"doorbell&subscribe=1&event=doorbell';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=1&event=dooropen';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . '"dooropen&subscribe=1&event=dooropen';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motionsensor&subscribe=1&event=motionsensor';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . '"motionsensor&subscribe=1&event=motionsensor';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
@@ -143,15 +143,12 @@ class doorbird extends eqLogic {
 
     $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=0&event=doorbell';
     doorbird::callDoor($urlfinal,$user,$pass);
-    log::add('doorbird', 'debug', 'Doorbell : ' . $urlfinal);
 
     $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=0&event=dooropen';
     doorbird::callDoor($urlfinal,$user,$pass);
-    log::add('doorbird', 'debug', 'Dooropen : ' . $urlfinal);
 
     $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motionsensor&subscribe=0&event=motionsensor';
     doorbird::callDoor($urlfinal,$user,$pass);
-    log::add('doorbird', 'debug', 'Motion : ' . $urlfinal);
 	}
 
   public function callDoor($url,$user,$pass) {
