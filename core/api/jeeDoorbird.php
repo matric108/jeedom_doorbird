@@ -31,17 +31,17 @@ if (!is_object($eqLogic)) {
 	die();
 }
 
-$event = init('event');
-$cmd = doorbirdCmd::byEqLogicIdAndLogicalId($id,$event);
+$sensor = init('sensor');
+$cmd = doorbirdCmd::byEqLogicIdAndLogicalId($id,$sensor);
 if (!is_object($cmd)) {
-	echo json_encode(array('text' => __('Commande inconnue : ', __FILE__) . init('event')));
+	echo json_encode(array('text' => __('Commande inconnue : ', __FILE__) . init('sensor')));
 	die();
 }
 
 log::add('doorbird', 'debug', 'Event : ' . $event);
 
 $value = 1;
-if ($event == 'dooropen') {
+if ($sensor == 'dooropen') {
 	$value = 0;
 }
 
