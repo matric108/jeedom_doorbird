@@ -119,15 +119,15 @@ class doorbird extends eqLogic {
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . 'doorbell"&subscribe=1&event=doorbell';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=1&event=doorbell';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . 'dooropen"&subscribe=1&event=dooropen';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=1&event=dooropen';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url="' . $url . 'motionsensor"&subscribe=1&event=motionsensor';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motion&subscribe=1&event=motionsensor';
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
