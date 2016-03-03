@@ -115,19 +115,19 @@ class doorbird extends eqLogic {
     $user = trim($this->getConfiguration('user'));
     $pass = trim($this->getConfiguration('pass'));
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?reset=1';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?reset=1&user=' . $user . '&password=' . $pass;
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=1&event=doorbell';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=1&event=doorbell&user=' . $user . '&password=' . $pass;
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=1&event=dooropen';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=1&event=dooropen&user=' . $user . '&password=' . $pass;
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motion&subscribe=1&event=motionsensor';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motion&subscribe=1&event=motionsensor&user=' . $user . '&password=' . $pass;
     doorbird::callDoor($urlfinal,$user,$pass);
     sleep(1);
 
@@ -141,13 +141,7 @@ class doorbird extends eqLogic {
     $user = trim($this->getConfiguration('user'));
     $pass = trim($this->getConfiguration('pass'));
 
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'doorbell&subscribe=0&event=doorbell';
-    doorbird::callDoor($urlfinal,$user,$pass);
-
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'dooropen&subscribe=0&event=dooropen';
-    doorbird::callDoor($urlfinal,$user,$pass);
-
-    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?url=' . $url . 'motionsensor&subscribe=0&event=motionsensor';
+    $urlfinal = 'http://' . $addr . '/bha-api/notification.cgi?reset=1&user=' . $user . '&password=' . $pass;
     doorbird::callDoor($urlfinal,$user,$pass);
 	}
 
