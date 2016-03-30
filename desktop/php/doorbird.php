@@ -24,7 +24,7 @@ $eqLogics = eqLogic::byType('doorbird');
     </div>
 
     <div class="col-lg-10 col-md-9 col-sm-8 eqLogicThumbnailDisplay" style="border-left: solid 1px #EEE; padding-left: 25px;">
-        <legend>{{Mes Doorbird}}
+        <legend><i class="fa fa-table"></i>  {{Mes Doorbird}}
         </legend>
             <div class="eqLogicThumbnailContainer">
                       <div class="cursor eqLogicAction" data-action="add" style="background-color : #ffffff; height : 200px;margin-bottom : 10px;padding : 5px;border-radius: 2px;width : 160px;margin-left : 10px;" >
@@ -122,7 +122,7 @@ $eqLogics = eqLogic::byType('doorbird');
                 <div id="infoNode" class="col-sm-6">
                 <form class="form-horizontal">
                     <fieldset>
-                        <legend>{{Configuration}}</legend>
+                        <legend><i class="fa fa-info-circle"></i>  {{Configuration}}</legend>
 
                         <div class="form-group">
                     		<label class="col-md-2 control-label">{{Adresse IP du doorbird}}</label>
@@ -150,7 +150,17 @@ $eqLogics = eqLogic::byType('doorbird');
             </div>
         </div>
 
-	<legend>{{Informations et Commandes}}</legend>
+        <form class="form-horizontal">
+            <fieldset>
+                <div class="form-actions">
+                    <a class="btn btn-danger eqLogicAction" data-action="remove"><i class="fa fa-minus-circle"></i> {{Supprimer}}</a>
+                    <a class="btn btn-success eqLogicAction" data-action="save"><i class="fa fa-check-circle"></i> {{Sauvegarder}}</a>
+                </div>
+            </fieldset>
+        </form>
+      </br>
+
+	<legend><i class="fa fa-table"></i>  {{Informations et Commandes}}</legend>
 
         <table id="table_cmd" class="table table-bordered table-condensed">
             <thead>
