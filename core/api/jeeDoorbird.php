@@ -15,7 +15,6 @@
  * You should have received a copy of the GNU General Public License
  * along with Jeedom. If not, see <http://www.gnu.org/licenses/>.
  */
-header('Content-type: application/json');
 require_once dirname(__FILE__) . "/../../../../core/php/core.inc.php";
 
 if (init('apikey') != config::byKey('api') || config::byKey('api') == '') {
@@ -27,14 +26,14 @@ if (init('apikey') != config::byKey('api') || config::byKey('api') == '') {
 $id = init('id');
 $eqLogic = doorbird::byId($id);
 if (!is_object($eqLogic)) {
-	echo json_encode(array('text' => __('Id inconnu : ', __FILE__) . init('id')));
+	echo 'Id inconnu ' . init('id');
 	die();
 }
 
 $sensor = init('sensor');
 $cmd = doorbirdCmd::byEqLogicIdAndLogicalId($id,$sensor);
 if (!is_object($cmd)) {
-	echo json_encode(array('text' => __('Commande inconnue : ', __FILE__) . init('sensor')));
+	echo 'Commande inconnue : ' . init('sensor');
 	die();
 }
 
@@ -48,8 +47,5 @@ if ($sensor == 'dooropen') {
 $cmd->event($value);
 $cmd->setConfiguration('value',$value);
 $cmd->save();
-
-
-return true;
 
 ?>
