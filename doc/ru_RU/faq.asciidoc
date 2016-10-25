@@ -1,0 +1,31 @@
+[panel,primary]
+.Est-ce que le plugin s'appuie sur des API tiers ?
+--
+Non, le plugin est en connexion directe avec le Doorbird
+--
+
+[panel,primary]
+.Est-ce qu'il est possible de récupérer le flux vidéo de Doorbird ?
+--
+Oui c'est possible, mais pas directement dans le plugin Camera de Jeedom.
+
+Doorbird met à disposition une URL vidéo et pas d'URL screenshot, donc il faudra passer par un moyen tiers : motion ou zoneminder par exemple
+
+URL de la vidéo (type mjpeg) : http://<doorbird-user>:<doorbird-password>@<doorbird-ip>/bha-api/video.cgi
+
+Il y a également un widget fourni par Doorbird accessible sur :
+
+http://<deviceip>/bha-api/view.html
+
+--
+
+
+[panel,primary]
+.Comment ouvrir le flux vidéo sur déclenchement d'alerte du Doorbird ?
+--
+C'est possible avec le plugin Clink par exemple.
+
+Dans Clink vous configurer un équipement avec un modal sur le flux vidéo ou le widget (voir les liens plus haut)
+
+Et dans un scénario, sur déclenchement de la détection de mouvement vous actionnez l'action Clink
+--
