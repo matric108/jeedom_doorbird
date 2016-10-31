@@ -110,7 +110,7 @@ class doorbird extends eqLogic {
 		$cmd->setEqLogic_id($this->getId());
 		$cmd->save();
 
-    $url = network::getNetworkAccess('internal') . '/plugins/doorbird/core/api/jeeDoorbird.php?apikey=' . config::byKey('api') . '%26id=' . $this->getId() . '%26sensor=';
+    $url = network::getNetworkAccess('internal') . '/plugins/doorbird/core/api/jeeDoorbird.php?apikey=' . jeedom::getApiKey('doorbird') . '%26id=' . $this->getId() . '%26sensor=';
     $addr = trim($this->getConfiguration('addr'));
     $user = trim($this->getConfiguration('user'));
     $pass = trim($this->getConfiguration('pass'));
@@ -165,16 +165,7 @@ class doorbird extends eqLogic {
 }
 
 class doorbirdCmd extends cmd {
-  /*     * *************************Attributs****************************** */
-
-
-
-  /*     * ***********************Methode static*************************** */
-
-  /*     * *********************Methode d'instance************************* */
   public function execute($_options = null) {
-
-
             switch ($this->getType()) {
 				          case 'info' :
           					return $this->getConfiguration('value');
