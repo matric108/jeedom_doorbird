@@ -43,8 +43,6 @@ if ($sensor == 'dooropen') {
 	$value = 0;
 }
 
-$cmd->event($value);
-$cmd->setConfiguration('value',$value);
-$cmd->save();
+$eqLogic->checkAndUpdateCmd(init('sensor'), $value);
 
 ?>
