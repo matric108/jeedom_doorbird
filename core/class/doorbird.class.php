@@ -167,24 +167,23 @@ class doorbird extends eqLogic {
     }
 
     public function syncCamera($addr,$urlfinal,$user,$pass) {
-        $plugin = plugin::byId('camera');
-        $camera_jeedom = eqLogic::byLogicalId('doorbird'.$addr, 'camera');
-        if (!is_object($camera_jeedom)) {
-            $camera_jeedom = new camera();
-            $camera_jeedom->setDisplay('height', '1280');
-            $camera_jeedom->setDisplay('width', '720');
-            $camera_jeedom->setName('Doorbird ' . $addr);
-            $camera_jeedom->setConfiguration('ip', $addr);
-            $camera_jeedom->setConfiguration('urlStream',  $urlfinal);
-            $camera_jeedom->setConfiguration('username', $user);
-            $camera_jeedom->setConfiguration('password', $pass);
-            $camera_jeedom->setEqType_name('camera');
-            $camera_jeedom->setConfiguration('protocole', 'http');
-            $camera_jeedom->setConfiguration('device', ' ');
-            $camera_jeedom->setConfiguration('applyDevice', ' ');
-            $camera_jeedom->setConfiguration('port', '80');
-            $camera_jeedom->setLogicalId('doorbird'.$addr);
-            $camera_jeedom->save();
+        $camera = camera::byLogicalId($addr, 'camera');
+        if (!is_object($camera)) {
+            $camera = new camera();
+            $camera->setDisplay('height', '1280');
+            $camera->setDisplay('width', '720');
+            $camera->setName('Doorbird ' . $addr);
+            $camera->setConfiguration('ip', $addr);
+            $camera->setConfiguration('urlStream',  $urlfinal);
+            $camera->setConfiguration('username', $user);
+            $camera->setConfiguration('password', $pass);
+            $camera->setEqType_name('camera');
+            $camera->setConfiguration('protocole', 'http');
+            $camera->setConfiguration('device', ' ');
+            $camera->setConfiguration('applyDevice', ' ');
+            $camera->setConfiguration('port', '80');
+            $camera->setLogicalId($addr);
+            $camera->save();
         }
     }
 
