@@ -1,5 +1,5 @@
 ==== The plugin configuration
 
-Le plugin ne comporte pas de configuration générale.
+The plugin does not have general configuration.
 
 Il faut configurer l'adresse, l'utilisateur et le mot de passe du Doorbird dans l'équipement.
