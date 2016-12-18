@@ -1,4 +1,4 @@
-==== Doorbird, portier connecté
+==== Doorbird, gatekeeper connected
 
 Ce plugin permet d'interconnecter Jeedom avec un portier Doorbird.
 
