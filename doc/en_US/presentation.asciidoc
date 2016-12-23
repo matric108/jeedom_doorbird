@@ -1,6 +1,6 @@
 ==== Doorbird, gatekeeper connected
 
-Ce plugin permet d'interconnecter Jeedom avec un portier Doorbird.
+This plugin allows to interconnect Jeedom with a Doorbird doorkeeper.
 
 Il permet deux types d'interconnexions :
 
