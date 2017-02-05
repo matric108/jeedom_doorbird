@@ -2,4 +2,4 @@
 
 Das Plugin enthält keine allgemeine Konfiguration.
 
-Il faut configurer l'adresse, l'utilisateur et le mot de passe du Doorbird dans l'équipement.
+Sie müssen die Adresse, Benutzer und Passwort vom Doorbird Gerät konfigurieren.
