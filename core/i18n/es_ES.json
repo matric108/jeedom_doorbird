@@ -1,38 +1,38 @@
 {
     "plugins\/doorbird\/desktop\/php\/doorbird.php": {
-        "Ajouter un équipement": "Ajouter un équipement",
-        "Rechercher": "Rechercher",
-        "Mes Doorbird": "Mes Doorbird",
-        "Sauvegarder": "Sauvegarder",
-        "Supprimer": "Supprimer",
-        "Configuration avancée": "Configuration avancée",
-        "Equipement": "Equipement",
-        "Commandes": "Commandes",
-        "Nom du doorbird": "Nom du doorbird",
-        "Nom de l'équipement doorbird": "Nom de l'équipement doorbird",
-        "Objet parent": "Objet parent",
-        "Aucun": "Aucun",
-        "Catégorie": "Catégorie",
-        "Activer": "Activer",
+        "Ajouter un équipement": "Agregar equipo",
+        "Rechercher": "Buscar",
+        "Mes Doorbird": "Mi Doorbird",
+        "Sauvegarder": "Salvar",
+        "Supprimer": "Borrar",
+        "Configuration avancée": "Configuración avanzada",
+        "Equipement": "Equipo",
+        "Commandes": "Ordenes",
+        "Nom du doorbird": "Nombre del doorbird",
+        "Nom de l'équipement doorbird": "Nombre del dispositivo doorbird",
+        "Objet parent": "Objeto padre",
+        "Aucun": "Ninguno",
+        "Catégorie": "Categoría",
+        "Activer": "Activar",
         "Visible": "Visible",
-        "Commentaire": "Commentaire",
-        "Adresse IP du doorbird": "Adresse IP du doorbird",
-        "Utilisateur du doorbird": "Utilisateur du doorbird",
-        "Mot de passe du doorbird": "Mot de passe du doorbird",
-        "Nom": "Nom",
-        "Type": "Type",
-        "Valeur": "Valeur",
-        "Options": "Options"
+        "Commentaire": "Comentario",
+        "Adresse IP du doorbird": "Dirección IP del doorbird",
+        "Utilisateur du doorbird": "Usuario del doorbird",
+        "Mot de passe du doorbird": "Contraseña del doorbird",
+        "Nom": "Nombre",
+        "Type": "Tipo",
+        "Valeur": "Valor",
+        "Options": "Opciones"
     },
     "plugins\/doorbird\/desktop\/js\/doorbird.js": {
-        "Afficher": "Afficher",
-        "Tester": "Tester"
+        "Afficher": "Mostrar",
+        "Tester": "Prueba"
     },
     "plugins\/doorbird\/core\/class\/doorbird.class.php": {
-        "Lumière": "Lumière",
-        "Ouverture Porte": "Ouverture Porte",
-        "Sonnerie": "Sonnerie",
-        "Mouvement": "Mouvement",
-        "Porte": "Porte"
+        "Lumière": "Iluminar",
+        "Ouverture Porte": "Apertura puerta",
+        "Sonnerie": "Timbre",
+        "Mouvement": "Movimiento",
+        "Porte": "Puerta"
     }
 }
