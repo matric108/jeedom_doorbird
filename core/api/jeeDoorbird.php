@@ -36,7 +36,7 @@ if (!is_object($cmd)) {
 	die();
 }
 
-log::add('doorbird', 'debug', 'Event : ' . $event);
+log::add('doorbird', 'debug', 'Event : ' . $sensor . ' sur ' . init('id'));
 
 $value = 1;
 if ($sensor == 'dooropen') {
