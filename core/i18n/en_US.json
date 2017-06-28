@@ -2,37 +2,37 @@
     "plugins\/doorbird\/desktop\/php\/doorbird.php": {
         "Ajouter un équipement": "Add equipment",
         "Rechercher": "Search",
-        "Mes Doorbird": "Mes Doorbird",
+        "Mes Doorbird": "My Doorbird",
         "Sauvegarder": "Save",
         "Supprimer": "Delete",
         "Configuration avancée": "Adanced Settings",
         "Equipement": "Equipment",
         "Commandes": "Commands",
-        "Nom du doorbird": "Nom du doorbird",
-        "Nom de l'équipement doorbird": "Nom de l'équipement doorbird",
+        "Nom du doorbird": "Doorbird name",
+        "Nom de l'équipement doorbird": "Name of the Doorbird equipment",
         "Objet parent": "Parent object",
         "Aucun": "None",
         "Catégorie": "Category",
         "Activer": "Enable",
         "Visible": "Visible",
         "Commentaire": "Comment",
-        "Adresse IP du doorbird": "Adresse IP du doorbird",
-        "Utilisateur du doorbird": "Utilisateur du doorbird",
-        "Mot de passe du doorbird": "Mot de passe du doorbird",
+        "Adresse IP du doorbird": "IP address Doorbird",
+        "Utilisateur du doorbird": "Doorbird login",
+        "Mot de passe du doorbird": "Doorbird password",
         "Nom": "Name",
         "Type": "Type",
         "Valeur": "Value",
         "Options": "Options"
     },
     "plugins\/doorbird\/desktop\/js\/doorbird.js": {
-        "Afficher": "Afficher",
-        "Tester": "Tester"
+        "Afficher": "Display",
+        "Tester": "Test"
     },
     "plugins\/doorbird\/core\/class\/doorbird.class.php": {
         "Lumière": "Light",
-        "Ouverture Porte": "Ouverture Porte",
+        "Ouverture Porte": "Opening door",
         "Sonnerie": "Ring",
-        "Mouvement": "Mouvement",
+        "Mouvement": "Movement",
         "Porte": "Door"
     }
 }
