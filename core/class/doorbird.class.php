@@ -71,6 +71,7 @@ class doorbird extends eqLogic {
         $cmd->setDisplay('generic_type','PRESENCE');
         $cmd->setConfiguration('returnStateValue',0);
         $cmd->setConfiguration('returnStateTime',1);
+        $cmd->setConfiguration('repeatEventManagement','always');
         $cmd->setTemplate("mobile",'alert');
         $cmd->setTemplate("dashboard",'alert' );
         $cmd->setEqLogic_id($this->getId());
@@ -88,6 +89,7 @@ class doorbird extends eqLogic {
         $cmd->setDisplay('generic_type','PRESENCE');
         $cmd->setConfiguration('returnStateValue',0);
         $cmd->setConfiguration('returnStateTime',1);
+        $cmd->setConfiguration('repeatEventManagement','always');
         $cmd->setTemplate("mobile",'presence');
         $cmd->setTemplate("dashboard",'presence' );
         $cmd->setEqLogic_id($this->getId());
@@ -105,6 +107,7 @@ class doorbird extends eqLogic {
         $cmd->setDisplay('generic_type','LOCK_STATE');
         $cmd->setConfiguration('returnStateValue',1);
         $cmd->setConfiguration('returnStateTime',1);
+        $cmd->setConfiguration('repeatEventManagement','always');
         $cmd->setTemplate("mobile",'lock');
         $cmd->setTemplate("dashboard",'lock' );
         $cmd->setEqLogic_id($this->getId());
