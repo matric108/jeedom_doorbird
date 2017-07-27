@@ -25,7 +25,7 @@ http://<deviceip>/bha-api/view.html
 --
 C'est possible avec le plugin Clink par exemple.
 
-Dans Clink vous configurer un équipement avec un modal sur le flux vidéo ou le widget (voir les liens plus haut)
+Dans Clink vous configurez un équipement avec un modal sur le flux vidéo ou le widget (voir les liens plus haut)
 
-Et dans un scénario, sur déclenchement de la détection de mouvement vous actionnez l'action Clink
+Et, dans un scénario, sur déclenchement de la détection de mouvement vous actionnez l'action Clink
 --
